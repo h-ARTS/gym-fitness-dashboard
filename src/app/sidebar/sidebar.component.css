@@ -1,0 +1,19 @@
+:host {
+  @apply w-[316px];
+}
+
+.sidebar {
+  @apply flex flex-col justify-between fixed bg-[#042413] h-full;
+}
+
+.sidebar-list-item {
+  @apply flex items-center relative py-4 px-8 text-lg before:absolute before:bg-transparent before:top-0 before:left-0 before:bottom-0 before:h-full before:w-2 before:rounded-tr-lg before:rounded-br-lg group-hover:bg-white/5 hover:before:bg-lime-400 text-white/50 group-hover:text-white before:group-[.active]:bg-lime-400 group-[.active]:text-white;
+}
+
+.sidebar-list-item-icon {
+  @apply flex-initial group-hover:text-lime-400 group-[.active]:text-lime-400 w-7 mr-3;
+}
+
+.sidebar-footer {
+  @apply mx-8 py-6 border-t-[1px] border-white/10;
+}
